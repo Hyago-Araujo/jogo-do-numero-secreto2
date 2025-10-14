@@ -16,5 +16,9 @@ function exibirMensagemInical(){
 exibirMensagemInical();
 
 function verificarChute(){
-    let chute = document.querySelector ('
+    let chute = document.querySelector ('input').value;
+
+    if(chute == numeroSecreto){
+        
+    }
 }
