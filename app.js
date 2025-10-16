@@ -26,6 +26,17 @@ function verificarChute(){
         document.getElementById('reiniciar').removeAttribute('disabled');
 
     } else{
-        
+        if(chute > numeroSecreto){
+            exibirTextoNaTela('h1', 'Você errou o número secreto é menor')
+        } else {
+            exibirTextoNaTela('h1', 'Você errou o número secreto é maior');
+        }
+        tentativas++;
+        limparCampo();
     }
+}
+
+function gerarNumeroAleatorio(){
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    
 }
