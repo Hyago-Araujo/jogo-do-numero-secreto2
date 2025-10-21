@@ -45,6 +45,10 @@ function gerarNumeroAleatorio(){
     } 
     if (listaDeNumeros.includes(numeroEscolhido)){
         return gerarNumeroAleatorio();
-    } else
+    } else {
+        listaDeNumeros.push(numeroEscolhido);
+        console.log(listaDeNumeros);
+        return numeroEscolhido;
+    }
 }
 
