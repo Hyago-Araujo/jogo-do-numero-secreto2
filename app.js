@@ -62,5 +62,5 @@ function reiniciarJogo(){
     limparCampo();
     tentativas = 1;
     exibirMensagemInical();
-    document.getElementById
+    document.getElementById('reiniciar').setAttribute('disabled', true);
 }
