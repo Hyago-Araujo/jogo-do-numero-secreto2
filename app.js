@@ -43,4 +43,8 @@ function gerarNumeroAleatorio(){
     if(quantidadeDeElementosNaLista == numeroLimite){
         listaDeNumeros = [];
     } 
+    if (listaDeNumeros.includes(numeroEscolhido)){
+        return gerarNumeroAleatorio();
+    } else
 }
+
