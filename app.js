@@ -52,3 +52,13 @@ function gerarNumeroAleatorio(){
     }
 }
 
+function limparCampo(){
+    chute = document.querySelector('input');
+    chute.value = '';
+}
+
+function reiniciarJogo(){
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    
+}
